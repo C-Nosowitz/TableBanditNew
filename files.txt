@@ -1,0 +1,7 @@
+Assets/Bear Asset/uploads_files_2254589_BEAR.FBX
+Assets/Bear Asset/uploads_files_2254589_DAE.rar
+Assets/Bear Asset/uploads_files_2254589_STL.rar
+Assets/Bear Asset/uploads_files_2254589_TEXTURES.rar
+Assets/Bear Asset/uploads_files_2254589_animations.rar
+Assets/Sprites/Bandit_Spr_Annoyed.png
+Assets/Sprites/Bandit_Spr_Friendly.png
