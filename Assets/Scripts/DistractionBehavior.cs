@@ -9,6 +9,7 @@ public class DistractionBehavior : MonoBehaviour
     public NavMeshAgent agent;
     public float distractionRadius = 35f;
     private bool isDistracting = true;
+    public Animator anim;
 
     void OnEnable()
     {
@@ -20,6 +21,7 @@ public class DistractionBehavior : MonoBehaviour
     {
         if (agent.hasPath)
         {
+            anim.SetTrigger("Move");
             CheckSurroundings();
         }
 
@@ -38,7 +40,6 @@ public class DistractionBehavior : MonoBehaviour
         {
             if (hitCollider.CompareTag("Enemy"))
             {
-                //Debug.Log(hitCollider.gameObject.name);
                 if (isDistracting)
                     hitCollider.GetComponent<Enemy>().SetDistraction(distractSpot);
                 else
@@ -52,5 +53,13 @@ public class DistractionBehavior : MonoBehaviour
     public void RemoveDistractions()
     {
         isDistracting = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.name == "Hint" && gameObject.name == "Skwawks")
+        {
+            RemoveDistractions();
+        }
     }
 }

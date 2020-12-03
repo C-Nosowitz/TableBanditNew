@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         saveSystem.CompleteLevel(prevLevel);
         if (prevLevel == 0)
             SceneManager.LoadScene("Dialogue System");
-        else if (prevLevel == 1)
+        else if (prevLevel == 2)
             SceneManager.LoadScene("LevelMap");
     }
 
