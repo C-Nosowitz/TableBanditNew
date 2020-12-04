@@ -46,7 +46,12 @@ public class LookAhead : MonoBehaviour
                 {
                      textBox.SetActive(true);
                      displayTimer = 0;
-                     levelEnd = true;
+                    if (hitInfo.collider.name != "Yuri")
+                        levelEnd = true;
+                    else
+                    {
+                        hitInfo.collider.gameObject.GetComponent<NPCQuest>().ShowNumberNeeded();
+                    }
                 }
                 if (displayTimer == 0)
                 {

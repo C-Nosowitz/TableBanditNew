@@ -37,24 +37,31 @@ public class NPCQuest : MonoBehaviour
         }
     }
 
+    public void ShowNumberNeeded()
+    {
+        if (firstTime)
+        {
+            itemCounter.text = "/" + requiredItemAmount;
+            firstTime = false;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            if (firstTime)
+            if (!firstTime)
             {
-                itemCounter.text = "/" + requiredItemAmount;
-                firstTime = false;
-            }
+                if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
+                {
+                    gate.SetActive(false);
 
-            if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
-            {
-                gate.SetActive(false);
-                
-                gateIcon.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
-                //distraction.gameObject.SetActive(true);
-                distraction.SetDestination(distractSpot);
+                    gateIcon.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
+                    //distraction.gameObject.SetActive(true);
+                    distraction.SetDestination(distractSpot);
+                }
             }
+            
         }
     }
 

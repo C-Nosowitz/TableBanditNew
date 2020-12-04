@@ -92,11 +92,12 @@ public class DialogueManager : MonoBehaviour
         display.SetActive(false);
         if (player.GetComponent<LookAhead>().levelEnd)
         {
-            if (gameManager.levelNum == 0)
+            if (gameManager.levelNum == 0 || gameManager.levelNum == 2)
             {
                 gameManager.GoToChaseSequence();
             }
-            else if (gameManager.levelNum == 1)
+            
+            if (gameManager.levelNum == 1)
             {
                 gameManager.ToCampgrounds();
             }

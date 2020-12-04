@@ -2871,6 +2871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 125435234}
   - component: {fileID: 125435233}
+  - component: {fileID: 125435235}
   m_Layer: 0
   m_Name: Exit
   m_TagString: StartChase
@@ -2907,6 +2908,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &125435235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 125435232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1062e0658917a74fab89c9d2907daae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    characterNames:
+    - Skwawks
+    - Bandit
+    sprites:
+    - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
+    - {fileID: 21300000, guid: 4be1d79e31006ca44aa7984ab3ead243, type: 3}
+    lines:
+    - Think it's time to head out while we have this chance?
+    - You said it! I gotta be home before I'm missed.
+  seen: 0
 --- !u!1 &126488446
 GameObject:
   m_ObjectHideFlags: 0
@@ -15055,7 +15079,7 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
     lines:
-    - Raspberries?
+    - Strawberries?
   seen: 0
 --- !u!1 &808041456
 GameObject:
@@ -19046,6 +19070,7 @@ MonoBehaviour:
   skwaks: {fileID: 617238527}
   flightDistance: 20
   timeDistracting: 10
+  usesLeft: 3
   player: {fileID: 1379028160}
   skwaksCounter: {fileID: 457200404}
 --- !u!1 &1018834283
@@ -24941,7 +24966,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365124503}
-  m_LocalRotation: {x: -0.005744173, y: 0.076050006, z: 0.00043812042, w: 0.99708736}
+  m_LocalRotation: {x: -0.005744174, y: 0.076050006, z: 0.0004381205, w: 0.99708736}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
