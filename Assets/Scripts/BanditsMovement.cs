@@ -26,64 +26,72 @@ public class BanditsMovement : MonoBehaviour
 
     public AudioSource eatEffect;
 
+    private bool stopBandit = false;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        stopBandit = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if bandit has been captured
-        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Restart"))
+        if (!stopBandit)
         {
-            
-            if (respawnTime == 2)
-                gameManager.GoToCheckpoint(transform);
-
-            respawnTime -= Time.deltaTime;
-
-            if (respawnTime <= 0)
+            //if bandit has been captured
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Restart"))
             {
-                anim.SetTrigger("Restart");
-                transform.GetChild(0).gameObject.GetComponent<CapsuleCollider>().enabled = true;
-                respawnTime = 2;
-            }
-                
-        }
-        else if (transform.GetChild(0).gameObject.GetComponent<CapsuleCollider>().enabled)
-        {
-            float horizontal = Input.GetAxisRaw("Horizontal");
-            float vertical = Input.GetAxisRaw("Vertical");
-            Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
 
-            
+                if (respawnTime == 2)
+                    gameManager.GoToCheckpoint(transform);
 
-            if (direction.magnitude >= 0.1f)
-            {
-                anim.SetBool("Moving", true);
-                float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
-                float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnVel, turnTime);//smooth numbers at angles
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
-                moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+                respawnTime -= Time.deltaTime;
 
-                if (!OnGround())
+                if (respawnTime <= 0)
                 {
-                    //Debug.Log("not grounded");
-                    moveDir.y += gravity;
+                    anim.SetTrigger("Restart");
+                    transform.GetChild(0).gameObject.GetComponent<CapsuleCollider>().enabled = true;
+                    respawnTime = 2;
+                }
+
+            }
+            else if (transform.GetChild(0).gameObject.GetComponent<CapsuleCollider>().enabled)
+            {
+                float horizontal = Input.GetAxisRaw("Horizontal");
+                float vertical = Input.GetAxisRaw("Vertical");
+                Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+
+
+
+                if (direction.magnitude >= 0.1f)
+                {
+                    anim.SetBool("Moving", true);
+                    float targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
+                    float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnVel, turnTime);//smooth numbers at angles
+                    transform.rotation = Quaternion.Euler(0f, angle, 0f);
+                    moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
+
+                    if (!OnGround())
+                    {
+                        //Debug.Log("not grounded");
+                        moveDir.y += gravity;
+                    }
+                    else
+                        moveDir.y = 0;
+
+
+                    controller.Move(moveDir.normalized * speed * Time.deltaTime);
                 }
                 else
-                    moveDir.y = 0;
-                    
+                    anim.SetBool("Moving", false);
 
-                controller.Move(moveDir.normalized * speed * Time.deltaTime);
             }
-            else
-                anim.SetBool("Moving", false);
-
         }
-        
+        else
+            anim.SetBool("Moving", false);
+
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             Application.Quit();
@@ -123,6 +131,7 @@ public class BanditsMovement : MonoBehaviour
             Debug.Log("Chase start");
             var dialogue = collider.GetComponent<DialogueTrigger>();
             GetComponent<LookAhead>().levelEnd = true;
+            stopBandit = true;
         }
 
         if (collider.CompareTag("EndChase"))

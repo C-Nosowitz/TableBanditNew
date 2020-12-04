@@ -10,7 +10,7 @@ public class SkwaksControl : MonoBehaviour
     public float flightDistance;
     public float timeDistracting;
     private bool inUse = false;
-    private int usesLeft = 3;
+    public int usesLeft = 3;
     private float timer;
     public Transform player;
     public Text skwaksCounter;
