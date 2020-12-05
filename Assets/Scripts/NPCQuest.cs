@@ -17,6 +17,9 @@ public class NPCQuest : MonoBehaviour
 
     public AudioSource peopleTalkingAudio;
 
+    public Dialogue dialogue;
+    public bool seen = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +55,7 @@ public class NPCQuest : MonoBehaviour
         {
             if (!firstTime)
             {
+                FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
                 {
                     gate.SetActive(false);
