@@ -18,6 +18,8 @@ public class DialogueManager : MonoBehaviour
     private Queue<Sprite> sprites;
     private Queue<string> sentences;
 
+    public int lineNumber = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,7 @@ public class DialogueManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Return))
         {
             DisplayNextLine();
+            lineNumber++;
         }
     }
 
@@ -39,6 +42,7 @@ public class DialogueManager : MonoBehaviour
         speakers.Clear();
         sprites.Clear();
         sentences.Clear();
+        lineNumber = 0;
 
         foreach (string name in dialogue.characterNames)
         {
