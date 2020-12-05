@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class NPCQuest : MonoBehaviour
 {
     public GameObject player;
+    public InventoryObj inventory;
     public int requiredItemAmount;
     public GameObject gate;
     public GameObject gateIcon;
@@ -34,6 +35,7 @@ public class NPCQuest : MonoBehaviour
             if (Vector3.Distance(distraction.transform.position, distractSpot) <= 2f)
             {
                 //Debug.Log("ready");
+                clearBerries();
                 distraction.gameObject.GetComponent<DistractionBehavior>().distractionRadius = 500f;
                 peopleTalkingAudio.gameObject.SetActive(false);
             }
@@ -66,6 +68,14 @@ public class NPCQuest : MonoBehaviour
                 }
             }
             
+        }
+    }
+
+ void clearBerries()
+    {
+        if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
+        {
+            inventory.Container.Clear();
         }
     }
 
