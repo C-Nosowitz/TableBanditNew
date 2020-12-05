@@ -96,14 +96,14 @@ public class DialogueManager : MonoBehaviour
         display.SetActive(false);
         if (player.GetComponent<LookAhead>().levelEnd)
         {
-            if (gameManager.levelNum == 0 || gameManager.levelNum == 2)
+            if (gameManager.levelNum == 0 || gameManager.levelNum == 2 || gameManager.levelNum == 3)
             {
                 gameManager.GoToChaseSequence();
             }
             
             if (gameManager.levelNum == 1)
             {
-                gameManager.ToCampgrounds();
+                gameManager.ToSuburbs();
             }
 
         }

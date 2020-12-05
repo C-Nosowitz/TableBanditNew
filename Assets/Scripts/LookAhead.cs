@@ -46,7 +46,7 @@ public class LookAhead : MonoBehaviour
                 {
                      textBox.SetActive(true);
                      displayTimer = 0;
-                    if (hitInfo.collider.name != "Yuri")
+                    if (hitInfo.collider.name != "Yuri" && hitInfo.collider.name != "Skwawks")
                         levelEnd = true;
                     else
                     {

@@ -58,6 +58,10 @@ public class GameManager : MonoBehaviour
         if (prevLevel == 0)
             SceneManager.LoadScene("Dialogue System");
         else if (prevLevel == 2)
+            SceneManager.LoadScene("Campgrounds");
+        else if (prevLevel == 3)
+            SceneManager.LoadScene("House_Last");
+        else if (prevLevel == 4)
             SceneManager.LoadScene("LevelMap");
     }
 
@@ -73,8 +77,8 @@ public class GameManager : MonoBehaviour
             
     }
 
-    public void ToCampgrounds()
+    public void ToSuburbs()
     {
-        SceneManager.LoadScene("Campgrounds");
+        SceneManager.LoadScene("Suburbia 1");
     }
 }

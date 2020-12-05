@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2229,7 +2229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87637438}
-  m_LocalRotation: {x: 0.030532237, y: 0.047856335, z: -0.0014635224, w: 0.99838644}
+  m_LocalRotation: {x: 0.030478776, y: 0.076015726, z: -0.0023246817, w: 0.996638}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6200,7 +6200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318486568}
-  m_LocalRotation: {x: 0.012367049, y: 0.04787503, z: -0.00059279794, w: 0.9987766}
+  m_LocalRotation: {x: 0.012345391, y: 0.07604544, z: -0.0009416094, w: 0.9970275}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10050,6 +10050,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1379028159}
+  inventory: {fileID: 0}
   requiredItemAmount: 9
   gate: {fileID: 839578558}
   gateIcon: {fileID: 840017959}
@@ -18960,7 +18961,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010761514}
-  m_LocalRotation: {x: 0.012367049, y: 0.04787504, z: -0.0005927983, w: 0.9987766}
+  m_LocalRotation: {x: 0.01234539, y: 0.07604544, z: -0.0009416097, w: 0.9970275}
   m_LocalPosition: {x: -4.6, y: 2.752643, z: -71.13386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -24976,7 +24977,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365124503}
-  m_LocalRotation: {x: -0.005754249, y: 0.04787791, z: 0.0002758223, w: 0.9988366}
+  m_LocalRotation: {x: -0.005744175, y: 0.076050006, z: 0.00043812057, w: 0.99708736}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -28003,7 +28004,7 @@ MonoBehaviour:
   - {fileID: 695433088}
   - {fileID: 801859767}
   saveSystem: {fileID: 675998522}
-  levelNum: 2
+  levelNum: 3
   livesCounter: {fileID: 1799781267}
   bgMusic: {fileID: 975063478}
 --- !u!4 &1568034972

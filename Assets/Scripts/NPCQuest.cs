@@ -32,13 +32,22 @@ public class NPCQuest : MonoBehaviour
     {
         if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
         {
-            if (Vector3.Distance(distraction.transform.position, distractSpot) <= 2f)
+            if (gameObject.name == "Yuri")
             {
-                //Debug.Log("ready");
-                clearBerries();
-                distraction.gameObject.GetComponent<DistractionBehavior>().distractionRadius = 500f;
-                peopleTalkingAudio.gameObject.SetActive(false);
+                if (Vector3.Distance(distraction.transform.position, distractSpot) <= 2f)
+                {
+                    //Debug.Log("ready");
+                    clearBerries();
+                    distraction.gameObject.GetComponent<DistractionBehavior>().distractionRadius = 500f;
+                    peopleTalkingAudio.gameObject.SetActive(false);
+                }
             }
+
+            if (gameObject.name == "Skwawks")
+            {
+                clearBerries();
+            }
+            
         }
     }
 

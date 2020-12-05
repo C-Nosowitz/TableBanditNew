@@ -1937,7 +1937,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 611889740}
-  m_LocalRotation: {x: 0.012056847, y: 0.07604571, z: -0.0009196016, w: 0.99703103}
+  m_LocalRotation: {x: 0.012056845, y: 0.07604571, z: -0.0009196014, w: 0.99703103}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2455,6 +2455,7 @@ GameObject:
   - component: {fileID: 754843398}
   - component: {fileID: 754843401}
   - component: {fileID: 754843397}
+  - component: {fileID: 754843402}
   m_Layer: 0
   m_Name: Skwawks
   m_TagString: NPC
@@ -2574,6 +2575,25 @@ MonoBehaviour:
     - Press the [Spacebar] to call me and I'll fly straight ahead and gather anyone
       nearby.
   seen: 0
+--- !u!95 &754843402
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754843396}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: df0275f652a0ae6449a935afc6e06eda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &758864447
 GameObject:
   m_ObjectHideFlags: 0
@@ -3489,6 +3509,7 @@ MonoBehaviour:
   spriteImg: {fileID: 568915751}
   dialogueText: {fileID: 986652973}
   display: {fileID: 1816251807}
+  lineNumber: 0
 --- !u!1001 &946195799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4392,6 +4413,7 @@ MonoBehaviour:
   saveSystem: {fileID: 226006839}
   levelNum: 1
   livesCounter: {fileID: 0}
+  bgMusic: {fileID: 0}
 --- !u!1 &1293583081
 GameObject:
   m_ObjectHideFlags: 0
