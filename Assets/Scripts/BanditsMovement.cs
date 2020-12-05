@@ -139,6 +139,11 @@ public class BanditsMovement : MonoBehaviour
             Debug.Log("Chase is over");
             gameManager.EndChase();
         }
+
+        if (collider.CompareTag("EndGame"))
+        {
+            stopBandit = true;
+        }
     }
 
     public int GetInventoryCount()
