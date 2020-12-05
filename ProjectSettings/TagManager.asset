@@ -15,6 +15,7 @@ TagManager:
   - StartChase
   - Ground
   - Distraction
+  - EndGame
   layers:
   - Default
   - TransparentFX
