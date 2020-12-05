@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2229,7 +2229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87637438}
-  m_LocalRotation: {x: 0.030478766, y: 0.076015726, z: -0.002324681, w: 0.996638}
+  m_LocalRotation: {x: 0.030397546, y: 0.105193265, z: -0.0032169775, w: 0.9939819}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6200,7 +6200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318486568}
-  m_LocalRotation: {x: 0.012345389, y: 0.07604544, z: -0.0009416092, w: 0.9970275}
+  m_LocalRotation: {x: 0.012312491, y: 0.10523438, z: -0.0013030327, w: 0.9943704}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10055,6 +10055,14 @@ MonoBehaviour:
   distractSpot: {x: -27.322, y: -1.6592, z: -17.8}
   itemCounter: {fileID: 1381942887}
   peopleTalkingAudio: {fileID: 28617181}
+  dialogue:
+    characterNames:
+    - Test
+    sprites:
+    - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
+    lines:
+    - You started the quest.
+  seen: 0
 --- !u!114 &581284073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10070,25 +10078,10 @@ MonoBehaviour:
   dialogue:
     characterNames:
     - Yuri
-    - Bandit
-    - Bandit
-    - Bandit
-    - Yuri
     sprites:
     - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
-    - {fileID: 21300000, guid: f679491b272510c4087f80c803326be7, type: 3}
-    - {fileID: 21300000, guid: 1ef41f969bd1cfa4d98aeaaad04f31a5, type: 3}
-    - {fileID: 21300000, guid: 1ef41f969bd1cfa4d98aeaaad04f31a5, type: 3}
-    - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
     lines:
-    - Yuri is very hungry...
-    - " I see\u2026 In that case, I think I have a plan that can benefit both of
-      us.\r"
-    - I saw some berries on the bushes all around the campground.
-    - How about we get you some tasty strawberries and you do a little favor for
-      us in return?
-    - Yah!  Yuri will do anything for strawberries! Bring back 9 stawberries and
-      Yuri will be grateful!
+    - Yuri is very happy for your help.  But you still haven't gotten enough strawberries.
   seen: 0
 --- !u!1 &589023307
 GameObject:
@@ -15076,10 +15069,25 @@ MonoBehaviour:
   dialogue:
     characterNames:
     - Yuri
+    - Bandit
+    - Bandit
+    - Bandit
+    - Yuri
     sprites:
     - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
+    - {fileID: 21300000, guid: f679491b272510c4087f80c803326be7, type: 3}
+    - {fileID: 21300000, guid: 1ef41f969bd1cfa4d98aeaaad04f31a5, type: 3}
+    - {fileID: 21300000, guid: 1ef41f969bd1cfa4d98aeaaad04f31a5, type: 3}
+    - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
     lines:
-    - Strawberries?
+    - Yuri is very hungry...
+    - " I see\u2026 In that case, I think I have a plan that can benefit both of
+      us.\r"
+    - I saw some berries on the bushes all around the campground.
+    - How about we get you some tasty strawberries and you do a little favor for
+      us in return?
+    - Yah!  Yuri will do anything for strawberries! Bring back 9 stawberries and
+      Yuri will be grateful!
   seen: 0
 --- !u!1 &808041456
 GameObject:
@@ -18950,7 +18958,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010761514}
-  m_LocalRotation: {x: 0.0123453885, y: 0.07604544, z: -0.00094160956, w: 0.9970275}
+  m_LocalRotation: {x: 0.01231249, y: 0.10523441, z: -0.0013030333, w: 0.9943704}
   m_LocalPosition: {x: -4.6, y: 2.752643, z: -71.13386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -24966,7 +24974,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365124503}
-  m_LocalRotation: {x: -0.005744174, y: 0.076050006, z: 0.0004381205, w: 0.99708736}
+  m_LocalRotation: {x: -0.005728867, y: 0.1052407, z: 0.0006062869, w: 0.9944301}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
