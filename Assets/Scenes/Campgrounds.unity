@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2229,7 +2229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87637438}
-  m_LocalRotation: {x: 0.030397546, y: 0.105193265, z: -0.0032169775, w: 0.9939819}
+  m_LocalRotation: {x: 0.030478776, y: 0.076015726, z: -0.0023246817, w: 0.996638}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6200,7 +6200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318486568}
-  m_LocalRotation: {x: 0.012312491, y: 0.10523438, z: -0.0013030327, w: 0.9943704}
+  m_LocalRotation: {x: 0.012345391, y: 0.07604544, z: -0.0009416094, w: 0.9970275}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -18958,7 +18958,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010761514}
-  m_LocalRotation: {x: 0.01231249, y: 0.10523441, z: -0.0013030333, w: 0.9943704}
+  m_LocalRotation: {x: 0.01234539, y: 0.07604544, z: -0.0009416097, w: 0.9970275}
   m_LocalPosition: {x: -4.6, y: 2.752643, z: -71.13386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -24974,7 +24974,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365124503}
-  m_LocalRotation: {x: -0.005728867, y: 0.1052407, z: 0.0006062869, w: 0.9944301}
+  m_LocalRotation: {x: -0.005744174, y: 0.076050006, z: 0.0004381205, w: 0.99708736}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -28002,6 +28002,7 @@ MonoBehaviour:
   saveSystem: {fileID: 675998522}
   levelNum: 2
   livesCounter: {fileID: 1799781267}
+  bgMusic: {fileID: 975063478}
 --- !u!4 &1568034972
 Transform:
   m_ObjectHideFlags: 0
