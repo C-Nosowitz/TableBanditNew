@@ -2457,7 +2457,7 @@ GameObject:
   - component: {fileID: 754843397}
   - component: {fileID: 754843402}
   m_Layer: 0
-  m_Name: Skwawks
+  m_Name: SkwawksBTW
   m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2553,27 +2553,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     characterNames:
+    - Skwawks
+    - Bandit
+    - Skwawks
+    - Bandit
+    - Skwawks
     - Bandit
     - Bandit
     - Skwawks
     - Skwawks
-    - Skwawks
-    - Skwawks
+    - Bandit
     sprites:
-    - {fileID: 21300000, guid: 1ef41f969bd1cfa4d98aeaaad04f31a5, type: 3}
-    - {fileID: 21300000, guid: 62f483ac6c1e4374d9ccd09430bfc68f, type: 3}
-    - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
+    - {fileID: 21300000, guid: 02ea31b6a2f61114cb8f230d2f38c58a, type: 3}
+    - {fileID: 21300000, guid: 2d0393f08d670c54a9cef5c491500520, type: 3}
+    - {fileID: 21300000, guid: 02ea31b6a2f61114cb8f230d2f38c58a, type: 3}
+    - {fileID: 21300000, guid: 910b843ebc411964da6a7f996d731ddc, type: 3}
+    - {fileID: 21300000, guid: 31002ce2aa53f704980d362094ffacaf, type: 3}
+    - {fileID: 21300000, guid: f679491b272510c4087f80c803326be7, type: 3}
+    - {fileID: 21300000, guid: f679491b272510c4087f80c803326be7, type: 3}
     - {fileID: 21300000, guid: 0b2c43d4dfb963f46ada2102391edc86, type: 3}
     - {fileID: 21300000, guid: 0b2c43d4dfb963f46ada2102391edc86, type: 3}
-    - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
+    - {fileID: 21300000, guid: f679491b272510c4087f80c803326be7, type: 3}
     lines:
-    - The suburbia level is supposed to be next.
-    - But it's not finished yet.
-    - This is the part where I give you the mini-map.
-    - You can see where enemies are, all thanks to me!
-    - 'I''ll also help you distract nearby humans. '
-    - Press the [Spacebar] to call me and I'll fly straight ahead and gather anyone
-      nearby.
+    - Hey you!
+    - Me?
+    - Yeah, I'm squaking at you furball!
+    - Big words for a little bird.
+    - Whatever. You're a dog right? You know where to find some good food?
+    - Well, what would you know. That's exactly what I'm looking for now.
+    - I've got a lead... but if you want some of my grub you're gonna have to pull
+      your weight.
+    - Haha! Leave it to me mate! I'll tell you what... I'll scope out the area for
+      nearby humans...
+    - ...and give you a map of where they are! How does that sound?
+    - Sounds useful... you're on!
   seen: 0
 --- !u!95 &754843402
 Animator:
@@ -4411,9 +4424,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelCheckpoints: []
   saveSystem: {fileID: 226006839}
-  levelNum: 1
+  levelNum: 5
   livesCounter: {fileID: 0}
-  bgMusic: {fileID: 0}
+  bgMusic: {fileID: 2146040222}
 --- !u!1 &1293583081
 GameObject:
   m_ObjectHideFlags: 0
@@ -4699,7 +4712,7 @@ MonoBehaviour:
   cam: {fileID: 93725783}
   speed: 20
   turnTime: 0.1
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1285336354}
   gravity: -4.2
   respawnTime: 2
   groundCheck: {fileID: 1661381947}
@@ -6233,7 +6246,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1941480044}
-  m_LocalRotation: {x: 0.030190323, y: 0.07601639, z: -0.0023026809, w: 0.99664676}
+  m_LocalRotation: {x: 0.030190349, y: 0.07601639, z: -0.0023026827, w: 0.99664676}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

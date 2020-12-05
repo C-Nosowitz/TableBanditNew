@@ -57,11 +57,11 @@ public class GameManager : MonoBehaviour
         saveSystem.CompleteLevel(prevLevel);
         if (prevLevel == 0)
             SceneManager.LoadScene("Dialogue System");
-        else if (prevLevel == 2)
+        else if (prevLevel == 1)
             SceneManager.LoadScene("Campgrounds");
-        else if (prevLevel == 3)
+        else if (prevLevel == 2)
             SceneManager.LoadScene("House_Last");
-        else if (prevLevel == 4)
+        else if (prevLevel == 3)
             SceneManager.LoadScene("LevelMap");
     }
 
