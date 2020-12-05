@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using UnityEngine;
 
-[ CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
+[CreateAssetMenu(fileName = "New Inventory", menuName = "Inventory System/Inventory")]
 
 public class InventoryObj : ScriptableObject
 {
@@ -22,11 +22,12 @@ public class InventoryObj : ScriptableObject
             }
         }
 
-        if (!hasItem) { 
-         Container.Add(new InventorySlot(_item, _amount));
+        if (!hasItem)
+        {
+            Container.Add(new InventorySlot(_item, _amount));
         }
 
-     }
+    }
 }
 
 [System.Serializable]

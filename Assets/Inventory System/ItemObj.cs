@@ -8,8 +8,8 @@ public enum ItemType
 }
 public abstract class ItemObj : ScriptableObject
 {
-    public GameObject gameObject;
+    public Sprite gameObject;
     public ItemType type;
-    [TextArea(50,50)]
+    [TextArea(50, 50)]
     public string description;
 }
