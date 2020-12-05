@@ -20,8 +20,13 @@ public class SimpleMovement : Enemy
         moveTimer = SetTimer();
     }
 
-     // Update is called once per frame
-     void Update()
+    private void Start()
+    {
+        footstepSounds.volume = PlayerPrefs.GetFloat("soundVolume");
+    }
+
+    // Update is called once per frame
+    void Update()
      {
         if (!pause)
         {

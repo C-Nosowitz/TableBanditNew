@@ -25,6 +25,7 @@ public class StationaryEnemy : Enemy
         isSitting = true;
         rotateToSeat = false;
         rotation = transform.rotation;
+        footstepSounds.volume = PlayerPrefs.GetFloat("soundVolume");
         //Debug.Log(rotation.eulerAngles.y);
     }
 

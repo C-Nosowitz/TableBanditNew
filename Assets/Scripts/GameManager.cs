@@ -13,10 +13,12 @@ public class GameManager : MonoBehaviour
     public static int prevLevel = 1;
     public static int lives = 3;
     public Text livesCounter;
+    public AudioSource bgMusic;
 
     // Start is called before the first frame update
     void Start()
     {
+        bgMusic.volume = PlayerPrefs.GetFloat("musicVolume");
         if (lives <= 0)
             lives = 3;
 
