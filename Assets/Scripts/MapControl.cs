@@ -8,10 +8,12 @@ public class MapControl : MonoBehaviour
 {
     public SaveSystem saveSystem;
     public GameObject[] levelButtons;
+    public AudioSource bgMusic;
 
     // Start is called before the first frame update
     void Start()
     {
+        bgMusic.volume = PlayerPrefs.GetFloat("musicVolume");
         saveSystem.Load();
         for (int i = 1; i < levelButtons.Length; i++)
         {

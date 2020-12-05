@@ -1156,6 +1156,7 @@ MonoBehaviour:
   - {fileID: 1808201256}
   - {fileID: 863773149}
   - {fileID: 326076947}
+  bgMusic: {fileID: 1791579426}
 --- !u!4 &1053968439
 Transform:
   m_ObjectHideFlags: 0

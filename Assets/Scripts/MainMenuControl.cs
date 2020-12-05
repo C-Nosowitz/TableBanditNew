@@ -8,7 +8,23 @@ public class MainMenuControl : MonoBehaviour
 {
     public GameObject optionsPanel;
     public Slider soundVolume;
+    public Text soundValueText;
     public Slider musicVolume;
+    public Text musicValueText;
+    public AudioSource bgMusic;
+
+    private void Update()
+    {
+        bgMusic.volume = PlayerPrefs.GetFloat("musicVolume", 0.5f);
+    }
+
+    public void UpdateSlider()
+    {
+        PlayerPrefs.SetFloat("soundVolume", soundVolume.value);
+        PlayerPrefs.SetFloat("musicVolume", musicVolume.value);
+        soundValueText.text = "" + PlayerPrefs.GetFloat("soundVolume", 1);
+        musicValueText.text = "" + PlayerPrefs.GetFloat("musicVolume", 0.5f);
+    }
 
     public void Play()
     {
@@ -24,8 +40,6 @@ public class MainMenuControl : MonoBehaviour
 
     public void ExitOptions()
     {
-        PlayerPrefs.SetFloat("soundVolume", soundVolume.value);
-        PlayerPrefs.SetFloat("musicVolume", musicVolume.value);
         optionsPanel.SetActive(false);
     }
 
