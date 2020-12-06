@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2229,7 +2229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87637438}
-  m_LocalRotation: {x: 0.030478766, y: 0.076015726, z: -0.002324681, w: 0.996638}
+  m_LocalRotation: {x: 0.030399507, y: 0.10458709, z: -0.0031984402, w: 0.99404585}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6200,7 +6200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318486568}
-  m_LocalRotation: {x: 0.012345389, y: 0.07604544, z: -0.0009416092, w: 0.9970275}
+  m_LocalRotation: {x: 0.012313283, y: 0.104627974, z: -0.0012955243, w: 0.99443436}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10082,7 +10082,7 @@ MonoBehaviour:
     characterNames:
     - Yuri
     sprites:
-    - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
+    - {fileID: 21300000, guid: c8312c386ca05254c926e81f6f985326, type: 3}
     lines:
     - Yuri is very happy for your help.  But you still haven't gotten enough strawberries.
   seen: 0
@@ -15077,11 +15077,11 @@ MonoBehaviour:
     - Bandit
     - Yuri
     sprites:
-    - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
+    - {fileID: 21300000, guid: 622b5c24bf9c2664d90a168eddde36f5, type: 3}
     - {fileID: 21300000, guid: f679491b272510c4087f80c803326be7, type: 3}
     - {fileID: 21300000, guid: 1ef41f969bd1cfa4d98aeaaad04f31a5, type: 3}
     - {fileID: 21300000, guid: 1ef41f969bd1cfa4d98aeaaad04f31a5, type: 3}
-    - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
+    - {fileID: 21300000, guid: c8312c386ca05254c926e81f6f985326, type: 3}
     lines:
     - Yuri is very hungry...
     - " I see\u2026 In that case, I think I have a plan that can benefit both of
@@ -18961,7 +18961,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010761514}
-  m_LocalRotation: {x: 0.0123453885, y: 0.07604544, z: -0.00094160956, w: 0.9970275}
+  m_LocalRotation: {x: 0.01231328, y: 0.104627974, z: -0.0012955241, w: 0.99443436}
   m_LocalPosition: {x: -4.6, y: 2.752643, z: -71.13386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -24977,7 +24977,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365124503}
-  m_LocalRotation: {x: -0.0057441755, y: 0.076050006, z: 0.00043812062, w: 0.99708736}
+  m_LocalRotation: {x: -0.0057292352, y: 0.104634255, z: 0.00060279324, w: 0.99449414}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -30701,6 +30701,103 @@ Transform:
   - {fileID: 134843816}
   m_Father: {fileID: 1595078009}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1754666947
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754666950}
+  - component: {fileID: 1754666949}
+  - component: {fileID: 1754666948}
+  m_Layer: 0
+  m_Name: Start Dialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1754666948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754666947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d89e906960cfcd4b985924cb5ea3a4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1754666949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754666947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1062e0658917a74fab89c9d2907daae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    characterNames:
+    - Skwawks
+    - Bandit
+    - Skwawks
+    - Bandit
+    - Bandit
+    - Bandit
+    - Skwawks
+    - Bandit
+    - Skwawks
+    - Bandit
+    - Skwawks
+    - Bandit
+    sprites:
+    - {fileID: 21300000, guid: 1fbb9635aa64d3f4290088bbe359b3ec, type: 3}
+    - {fileID: 21300000, guid: de990b0ad9cc34b42806b02647209c87, type: 3}
+    - {fileID: 21300000, guid: 6436b6e9d8bd4fc439e349cc6b57d611, type: 3}
+    - {fileID: 21300000, guid: de990b0ad9cc34b42806b02647209c87, type: 3}
+    - {fileID: 21300000, guid: 2d0393f08d670c54a9cef5c491500520, type: 3}
+    - {fileID: 21300000, guid: 2d0393f08d670c54a9cef5c491500520, type: 3}
+    - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
+    - {fileID: 21300000, guid: 62f483ac6c1e4374d9ccd09430bfc68f, type: 3}
+    - {fileID: 21300000, guid: 02ea31b6a2f61114cb8f230d2f38c58a, type: 3}
+    - {fileID: 21300000, guid: 4be1d79e31006ca44aa7984ab3ead243, type: 3}
+    - {fileID: 21300000, guid: 1fbb9635aa64d3f4290088bbe359b3ec, type: 3}
+    - {fileID: 21300000, guid: c8d5d2a1864a5b5479a4f901912a329b, type: 3}
+    lines:
+    - Ha!  Those humans really thought they could catch us!
+    - But they're no match for the two of us!  We make an excellent team!
+    - Right you are.  I reckon this is more fun than I was expecting.
+    - Glad you came along now, aren't you?  That's the spirit!
+    - ...
+    - Hey Skwawks, did you see something move just now?
+    - What ya talkin' about, mate?
+    - Behind us... I thought I saw something.  Following us.
+    - Ya got some kinda enemies or somethin'?
+    - Just one.  A cat, named Shadow.
+    - Ha!  Who's afraid of cats now?
+    - Shut up.
+  seen: 0
+--- !u!4 &1754666950
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754666947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.322, y: 1.1485251, z: 65.761}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1755633696
 GameObject:

@@ -69,6 +69,8 @@ public class NPCQuest : MonoBehaviour
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
                 {
+                    GetComponent<DialogueTrigger>().dialogue = dialogue;
+                    GetComponent<DialogueTrigger>().TriggerDialogue();
                     gate.SetActive(false);
 
                     gateIcon.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
