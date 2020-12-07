@@ -6623,7 +6623,7 @@ MonoBehaviour:
     - Ah!  It's you again!  Do you like how I've marked all the nearby humans for
       you?
     - Of course you do.  Anyway, see all those tasty berries around?
-    - If you gather me 5 of them.. we can split them and who knows... maybe I'll
+    - If you gather me 5 of them, we can split them, and who knows... maybe I'll
       help you out even more.
     - Maybe?
     - Hey, get those berries and then we'll negotiate.
@@ -6640,8 +6640,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 26.691483, y: 6.875599, z: 3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 26, y: 6.875599, z: 5}
+  m_Center: {x: -5, y: 0, z: 3}
 --- !u!1 &344269720
 GameObject:
   m_ObjectHideFlags: 0
@@ -9770,7 +9770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 562610619}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.03, y: 0.117491364, z: -3}
+  m_LocalPosition: {x: 0.03, y: 0.117491364, z: -0}
   m_LocalScale: {x: 2.0970712, y: 1.4241534, z: 4.3300343}
   m_Children: []
   m_Father: {fileID: 1929328147}
@@ -9809,7 +9809,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 343f4be9a9a623642a229f5cffb972bd, type: 3}
     - {fileID: 21300000, guid: 4be1d79e31006ca44aa7984ab3ead243, type: 3}
     lines:
-    - There's bound to be more food at the campgrounds...
+    - There's bound to be more food at the campgrounds up ahead...
     - ...but I should make sure I've got everything around here first!
   seen: 0
 --- !u!65 &562610623
@@ -9823,7 +9823,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 4.484608}
+  m_Size: {x: 1, y: 1, z: 2}
   m_Center: {x: -2.8957727e-17, y: 0, z: -1.7423036}
 --- !u!1 &573566053
 GameObject:
@@ -10781,7 +10781,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628003067}
-  m_LocalRotation: {x: -0.006017049, y: 0.10463407, z: 0.0006330751, w: 0.9944924}
+  m_LocalRotation: {x: -0.006017151, y: 0.10446571, z: 0.0006320558, w: 0.9945101}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10996,7 +10996,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh123852
+  m_Name: pb_Mesh28926
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15774,7 +15774,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932049401}
-  m_LocalRotation: {x: 0.01202549, y: 0.10462835, z: -0.0012652447, w: 0.9944379}
+  m_LocalRotation: {x: 0.012025702, y: 0.104459986, z: -0.0012632085, w: 0.9944556}
   m_LocalPosition: {x: -78.3, y: 4.94, z: 54.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -18934,7 +18934,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.889938, y: 6.9301624, z: 9.428719}
+  m_Size: {x: 8, y: 6.9301624, z: 10}
   m_Center: {x: 0.34387589, y: -0.46508121, z: 1.6524658}
 --- !u!114 &1174394564
 MonoBehaviour:
@@ -19294,7 +19294,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh123548
+  m_Name: pb_Mesh28622
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19688,7 +19688,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226458611}
-  m_LocalRotation: {x: 0.0120254895, y: 0.10462835, z: -0.0012652446, w: 0.9944379}
+  m_LocalRotation: {x: 0.012025703, y: 0.104459986, z: -0.0012632085, w: 0.9944556}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -25460,7 +25460,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh124226
+  m_Name: pb_Mesh29300
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30041,7 +30041,7 @@ MonoBehaviour:
   talkPrompt: {fileID: 1266226734}
   textBox: {fileID: 55500190}
   displayTimer: 0
-  sightDistance: 10
+  sightDistance: 3
   levelEnd: 0
 --- !u!136 &2017634134
 CapsuleCollider:
@@ -30109,7 +30109,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh123066
+  m_Name: pb_Mesh28140
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31068,7 +31068,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072083278}
-  m_LocalRotation: {x: 0.030111821, y: 0.104588024, z: -0.003168172, w: 0.9940546}
+  m_LocalRotation: {x: 0.030112334, y: 0.104419716, z: -0.003163071, w: 0.9940723}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
