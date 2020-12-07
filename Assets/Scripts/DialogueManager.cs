@@ -33,7 +33,6 @@ public class DialogueManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Return))
         {
             DisplayNextLine();
-            lineNumber++;
         }
     }
 
@@ -42,7 +41,7 @@ public class DialogueManager : MonoBehaviour
         speakers.Clear();
         sprites.Clear();
         sentences.Clear();
-        lineNumber = 0;
+        lineNumber = 1;
 
         foreach (string name in dialogue.characterNames)
         {
@@ -67,9 +66,11 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             EndDialogue();
+            lineNumber = 0;
             return;
         }
 
+        lineNumber++;
         string speaker = speakers.Dequeue();
         Sprite sprite = sprites.Dequeue();
         string line = sentences.Dequeue();

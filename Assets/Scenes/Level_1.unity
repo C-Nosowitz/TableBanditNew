@@ -5387,7 +5387,6 @@ GameObject:
   - component: {fileID: 137363490}
   - component: {fileID: 137363494}
   - component: {fileID: 137363493}
-  - component: {fileID: 137363492}
   - component: {fileID: 137363491}
   m_Layer: 10
   m_Name: Bandit
@@ -5430,20 +5429,6 @@ MonoBehaviour:
   displayTimer: 0
   sightDistance: 10
   levelEnd: 0
---- !u!136 &137363492
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137363489}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.7
-  m_Height: 2.27
-  m_Direction: 2
-  m_Center: {x: 0, y: -0.26, z: 0}
 --- !u!114 &137363493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5483,13 +5468,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 2.15
   m_Radius: 0.8
   m_SlopeLimit: 45
   m_StepOffset: 2.5
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0.38}
+  m_Center: {x: 0, y: 0, z: 0.41}
 --- !u!1001 &139423792
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12780,6 +12765,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07618a64e690d5a4b9b812dc1f5c9f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemObj: {fileID: 0}
   inventory: {fileID: 11400000, guid: 958761cec6be85641963b4fc8959dc68, type: 2}
   xStart: 0
   yStart: 0
@@ -40088,6 +40074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07618a64e690d5a4b9b812dc1f5c9f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemObj: {fileID: 0}
   inventory: {fileID: 11400000, guid: 958761cec6be85641963b4fc8959dc68, type: 2}
   xStart: 0
   yStart: 0
@@ -98448,7 +98435,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673214551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.024, z: 0}
+  m_LocalPosition: {x: 0, y: -1.077, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 137363490}
@@ -101431,6 +101418,7 @@ MonoBehaviour:
   spriteImg: {fileID: 82161789}
   dialogueText: {fileID: 1046463793}
   display: {fileID: 1475281460}
+  lineNumber: 0
 --- !u!4 &1794027567
 Transform:
   m_ObjectHideFlags: 0

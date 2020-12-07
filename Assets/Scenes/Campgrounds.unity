@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2229,7 +2229,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87637438}
-  m_LocalRotation: {x: 0.030399507, y: 0.10458709, z: -0.0031984402, w: 0.99404585}
+  m_LocalRotation: {x: 0.030478755, y: 0.076015726, z: -0.00232468, w: 0.996638}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2690,7 +2690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110581615}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.6, y: 3.22, z: -78.94}
+  m_LocalPosition: {x: -4.6, y: 3.3, z: -78.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 87637440}
@@ -6200,7 +6200,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318486568}
-  m_LocalRotation: {x: 0.012313283, y: 0.104627974, z: -0.0012955243, w: 0.99443436}
+  m_LocalRotation: {x: 0.01234538, y: 0.07604544, z: -0.0009416086, w: 0.9970275}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10033,10 +10033,10 @@ BoxCollider:
   m_GameObject: {fileID: 581284070}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 2.31, y: 0.57376397, z: 2.36}
-  m_Center: {x: 0, y: 0.28688198, z: -0.34}
+  m_Size: {x: 1.2105654, y: 0.57376397, z: 1.2127801}
+  m_Center: {x: -0.13923843, y: 0.28688198, z: -0.18454319}
 --- !u!114 &581284072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10050,22 +10050,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1379028159}
-  inventory: {fileID: 0}
+  inventory: {fileID: 11400000, guid: 958761cec6be85641963b4fc8959dc68, type: 2}
   requiredItemAmount: 9
   gate: {fileID: 839578558}
   gateIcon: {fileID: 840017959}
   distraction: {fileID: 274331116}
   distractSpot: {x: -27.322, y: -1.6592, z: -17.8}
   itemCounter: {fileID: 1381942887}
+  checkpoint: {fileID: 2060171758}
   peopleTalkingAudio: {fileID: 28617181}
   dialogue:
     characterNames:
-    - Test
+    - Yuri
     sprites:
-    - {fileID: 21300000, guid: 56aca5999b39da6459b1d3377cffcd8e, type: 3}
+    - {fileID: 21300000, guid: c8312c386ca05254c926e81f6f985326, type: 3}
     lines:
-    - You started the quest.
+    - You got all the strawberries! Yuri is happy!
   seen: 0
+  dManager: {fileID: 1506873834}
 --- !u!114 &581284073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10964,7 +10966,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 617238527}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8591, y: 4.0732, z: -60.59}
+  m_LocalPosition: {x: -0.61, y: 4.0732, z: -60.59}
   m_LocalScale: {x: 0.6287083, y: 0.6287083, z: 0.6287083}
   m_Children:
   - {fileID: 617468859}
@@ -18961,8 +18963,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010761514}
-  m_LocalRotation: {x: 0.01231328, y: 0.104627974, z: -0.0012955241, w: 0.99443436}
-  m_LocalPosition: {x: -4.6, y: 2.752643, z: -71.13386}
+  m_LocalRotation: {x: 0.012345381, y: 0.07604544, z: -0.00094160886, w: 0.9970275}
+  m_LocalPosition: {x: -4.6, y: 2.832643, z: -71.13386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -24977,7 +24979,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365124503}
-  m_LocalRotation: {x: -0.0057292352, y: 0.104634255, z: 0.00060279324, w: 0.99449414}
+  m_LocalRotation: {x: -0.0057441867, y: 0.076050006, z: 0.0004381215, w: 0.99708736}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -25220,7 +25222,6 @@ GameObject:
   - component: {fileID: 1379028160}
   - component: {fileID: 1379028163}
   - component: {fileID: 1379028162}
-  - component: {fileID: 1379028161}
   - component: {fileID: 1379028164}
   m_Layer: 10
   m_Name: Bandit
@@ -25237,7 +25238,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1379028159}
   m_LocalRotation: {x: -0, y: -0.9992815, z: -0, w: 0.037900742}
-  m_LocalPosition: {x: -4.6, y: 0.72, z: -60.8}
+  m_LocalPosition: {x: -4.6, y: 0.8, z: -60.8}
   m_LocalScale: {x: 2.2511454, y: 2.2511454, z: 2.2511454}
   m_Children:
   - {fileID: 4400004976993888}
@@ -25246,20 +25247,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -175.656, z: 0}
---- !u!136 &1379028161
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379028159}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.612998
-  m_Height: 2
-  m_Direction: 2
-  m_Center: {x: 0, y: -0.43, z: 0.02259922}
 --- !u!114 &1379028162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25279,7 +25266,7 @@ MonoBehaviour:
   speed: 20
   turnTime: 0.1
   gameManager: {fileID: 1568034971}
-  gravity: -4.2
+  gravity: -2.2
   respawnTime: 2
   groundCheck: {fileID: 1621675767}
   groundDistance: 0.4
@@ -25299,7 +25286,7 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 2.15
   m_Radius: 0.8
   m_SlopeLimit: 45
   m_StepOffset: 2.5
@@ -28377,7 +28364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1621675766}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.01, z: 0}
+  m_LocalPosition: {x: 0, y: -1.077, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1379028160}

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10781,7 +10781,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628003067}
-  m_LocalRotation: {x: -0.006018559, y: 0.10222537, z: 0.000618501, w: 0.9947429}
+  m_LocalRotation: {x: -0.0060327365, y: 0.07604987, z: 0.0004601298, w: 0.9970857}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -15373,7 +15373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917476940}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.01, z: 0}
+  m_LocalPosition: {x: 0, y: -1.077, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2017634132}
@@ -15774,7 +15774,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932049401}
-  m_LocalRotation: {x: 0.012028518, y: 0.10221978, z: -0.0012361183, w: 0.9946884}
+  m_LocalRotation: {x: 0.012056847, y: 0.076045714, z: -0.0009196017, w: 0.99703103}
   m_LocalPosition: {x: -78.3, y: 4.94, z: 54.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -18933,7 +18933,7 @@ BoxCollider:
   m_GameObject: {fileID: 1174394561}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 8, y: 6.9301624, z: 10}
   m_Center: {x: 0.34387589, y: -0.46508121, z: 1.6524658}
@@ -19040,6 +19040,7 @@ MonoBehaviour:
   distraction: {fileID: 0}
   distractSpot: {x: -27.322, y: -1.6592, z: -17.8}
   itemCounter: {fileID: 1760002988}
+  checkpoint: {fileID: 38071181}
   peopleTalkingAudio: {fileID: 0}
   dialogue:
     characterNames:
@@ -19070,10 +19071,11 @@ MonoBehaviour:
       and I'll do it.
     - But, y'know, not too often.
     - 5 strawberries are only worth so much effort.
-    - I see...  How about, once we get to the campgrounds, you help me out 3 times? 
-      Does that sound fair?
+    - I see...  How about, once we get to the campgrounds, you help me out 3 times?
+      Sound fair?
     - I reckon so.  You've got yourself a deal!
   seen: 0
+  dManager: {fileID: 473711894}
 --- !u!1 &1182975392
 GameObject:
   m_ObjectHideFlags: 0
@@ -19714,7 +19716,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226458611}
-  m_LocalRotation: {x: 0.012028516, y: 0.10221976, z: -0.0012361179, w: 0.9946884}
+  m_LocalRotation: {x: 0.012056847, y: 0.07604571, z: -0.0009196016, w: 0.99703103}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -30026,7 +30028,6 @@ GameObject:
   - component: {fileID: 2017634132}
   - component: {fileID: 2017634136}
   - component: {fileID: 2017634135}
-  - component: {fileID: 2017634134}
   - component: {fileID: 2017634133}
   m_Layer: 10
   m_Name: Bandit
@@ -30069,20 +30070,6 @@ MonoBehaviour:
   displayTimer: 0
   sightDistance: 3
   levelEnd: 0
---- !u!136 &2017634134
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2017634131}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  m_Radius: 0.612998
-  m_Height: 2
-  m_Direction: 2
-  m_Center: {x: 0, y: -0.43, z: 0.02259922}
 --- !u!114 &2017634135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30102,7 +30089,7 @@ MonoBehaviour:
   speed: 20
   turnTime: 0.1
   gameManager: {fileID: 1495278288}
-  gravity: -4.2
+  gravity: -2.2
   respawnTime: 2
   groundCheck: {fileID: 917476941}
   groundDistance: 0.4
@@ -30122,10 +30109,10 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
+  m_Height: 2.15
   m_Radius: 0.8
   m_SlopeLimit: 45
-  m_StepOffset: 2.5
+  m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0.05}
@@ -31094,7 +31081,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072083278}
-  m_LocalRotation: {x: 0.03011942, y: 0.10218036, z: -0.0030952403, w: 0.994305}
+  m_LocalRotation: {x: 0.030190323, y: 0.07601639, z: -0.0023026809, w: 0.99664676}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
