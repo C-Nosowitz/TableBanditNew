@@ -6627,7 +6627,7 @@ MonoBehaviour:
       help you out even more.
     - Maybe?
     - Hey, get those berries and then we'll negotiate.
-    - You got it!
+    - You're a wily one, aren't you...  I can respect that.  5 strawberries it is!
   seen: 0
 --- !u!65 &344267600
 BoxCollider:
@@ -10781,7 +10781,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628003067}
-  m_LocalRotation: {x: -0.006017151, y: 0.10446571, z: 0.0006320558, w: 0.9945101}
+  m_LocalRotation: {x: -0.006018559, y: 0.10222537, z: 0.000618501, w: 0.9947429}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -10996,7 +10996,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28926
+  m_Name: pb_Mesh266848
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15774,7 +15774,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932049401}
-  m_LocalRotation: {x: 0.012025702, y: 0.104459986, z: -0.0012632085, w: 0.9944556}
+  m_LocalRotation: {x: 0.012028518, y: 0.10221978, z: -0.0012361183, w: 0.9946884}
   m_LocalPosition: {x: -78.3, y: 4.94, z: 54.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -17125,7 +17125,8 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: 2d0393f08d670c54a9cef5c491500520, type: 3}
     lines:
-    - Huh?  Where did that bird go?  I thought he was with me...
+    - Huh?  Where did that bird go?  I thought he was with me...  I'd better go find
+      him.
   seen: 0
 --- !u!4 &1029108620
 Transform:
@@ -18954,7 +18955,7 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: 0b2c43d4dfb963f46ada2102391edc86, type: 3}
     lines:
-    - Keep getting those berries... I'll be right here.
+    - Keep getting those berries...  I'll be right here.
   seen: 0
 --- !u!23 &1174394565
 MeshRenderer:
@@ -19043,10 +19044,35 @@ MonoBehaviour:
   dialogue:
     characterNames:
     - Skwawks
+    - Bandit
+    - Skwawks
+    - Skwawks
+    - Skwawks
+    - Skwawks
+    - Bandit
+    - Skwawks
     sprites:
     - {fileID: 21300000, guid: 0b2c43d4dfb963f46ada2102391edc86, type: 3}
+    - {fileID: 21300000, guid: de990b0ad9cc34b42806b02647209c87, type: 3}
+    - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
+    - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
+    - {fileID: 21300000, guid: 31002ce2aa53f704980d362094ffacaf, type: 3}
+    - {fileID: 21300000, guid: 02ea31b6a2f61114cb8f230d2f38c58a, type: 3}
+    - {fileID: 21300000, guid: f679491b272510c4087f80c803326be7, type: 3}
+    - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
     lines:
-    - 5 berries!  Well done, mate!
+    - You brought me 5 berries!  Well done, mate!  You're the greatest!
+    - Excellent.  Now, you mentioned you might be able to help me out more.  What
+      did you have in mind?
+    - Well, ya see... I've got these bright red feathers.  When I fly by, humans
+      like to watch.
+    - So, if you want me to distract them for a little while... just press [Space]
+      and I'll do it.
+    - But, y'know, not too often.
+    - 5 strawberries are only worth so much effort.
+    - I see...  How about, once we get to the campgrounds, you help me out 3 times? 
+      Does that sound fair?
+    - I reckon so.  You've got yourself a deal!
   seen: 0
 --- !u!1 &1182975392
 GameObject:
@@ -19294,7 +19320,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28622
+  m_Name: pb_Mesh266544
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -19688,7 +19714,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226458611}
-  m_LocalRotation: {x: 0.012025703, y: 0.104459986, z: -0.0012632085, w: 0.9944556}
+  m_LocalRotation: {x: 0.012028516, y: 0.10221976, z: -0.0012361179, w: 0.9946884}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -25460,7 +25486,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh29300
+  m_Name: pb_Mesh267222
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -30109,7 +30135,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh28140
+  m_Name: pb_Mesh266062
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -31068,7 +31094,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072083278}
-  m_LocalRotation: {x: 0.030112334, y: 0.104419716, z: -0.003163071, w: 0.9940723}
+  m_LocalRotation: {x: 0.03011942, y: 0.10218036, z: -0.0030952403, w: 0.994305}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
