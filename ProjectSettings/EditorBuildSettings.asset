@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 7775f81b35223304391820ac1656cc48
+  - enabled: 1
     path: Assets/Scenes/LevelMap.unity
     guid: b494691cb7246d14e84d4cfbc7120976
   - enabled: 1
@@ -27,11 +30,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Dialogue System.unity
     guid: f088bc0954a752740bf70107a6d720b5
   - enabled: 1
+    path: Assets/Scenes/Suburbia 1.unity
+    guid: 83445ffc41af253449c2d081e95f1c35
+  - enabled: 1
     path: Assets/Scenes/Campgrounds.unity
     guid: 5da01bebdfcf6473ab48de4828f438e5
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 7775f81b35223304391820ac1656cc48
   - enabled: 1
     path: Assets/Scenes/House_Last.unity
     guid: 58863d2c349479944aa0428ec240fda4
