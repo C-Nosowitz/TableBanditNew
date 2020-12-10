@@ -5,7 +5,6 @@ using UnityEngine;
 public class MiniMapCameraControl : MonoBehaviour
 {
     public Transform player;
-    public Transform icon;
     Vector3 position;
     public float offset;
     // Start is called before the first frame update

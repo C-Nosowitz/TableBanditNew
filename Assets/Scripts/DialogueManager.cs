@@ -33,6 +33,7 @@ public class DialogueManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Return))
         {
             DisplayNextLine();
+            lineNumber++;
         }
     }
 
@@ -41,7 +42,7 @@ public class DialogueManager : MonoBehaviour
         speakers.Clear();
         sprites.Clear();
         sentences.Clear();
-        lineNumber = 1;
+        lineNumber = 0;
 
         foreach (string name in dialogue.characterNames)
         {
@@ -66,11 +67,9 @@ public class DialogueManager : MonoBehaviour
         if (sentences.Count == 0)
         {
             EndDialogue();
-            lineNumber = 0;
             return;
         }
 
-        lineNumber++;
         string speaker = speakers.Dequeue();
         Sprite sprite = sprites.Dequeue();
         string line = sentences.Dequeue();
@@ -97,14 +96,14 @@ public class DialogueManager : MonoBehaviour
         display.SetActive(false);
         if (player.GetComponent<LookAhead>().levelEnd)
         {
-            if (gameManager.levelNum == 0 || gameManager.levelNum == 1 || gameManager.levelNum == 2)
+            if (gameManager.levelNum == 0 || gameManager.levelNum == 2)
             {
                 gameManager.GoToChaseSequence();
             }
             
-            if (gameManager.levelNum == 5)
+            if (gameManager.levelNum == 1)
             {
-                gameManager.ToSuburbs();
+                gameManager.ToCampgrounds();
             }
 
         }

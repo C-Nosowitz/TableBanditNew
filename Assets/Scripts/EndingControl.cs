@@ -17,10 +17,8 @@ public class EndingControl : MonoBehaviour
     public int endLineNum;
     private bool moved = false;
     private bool pickuped = false;
-    private bool canEnd = false;
     private void Update()
     {
-        Debug.Log(dManager.lineNumber);
         if (dManager.lineNumber >= startLineNum && !moved)
         {
             agent.SetDestination(shadow.position);
@@ -34,12 +32,6 @@ public class EndingControl : MonoBehaviour
         }
 
         if (dManager.lineNumber >= endLineNum && pickuped)
-        {
-            canEnd = true;
-            
-        }
-
-        if (canEnd && dManager.lineNumber == 0)
         {
             SceneManager.LoadScene("MainMenu");
         }
