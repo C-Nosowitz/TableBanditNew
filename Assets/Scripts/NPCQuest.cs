@@ -76,6 +76,7 @@ public class NPCQuest : MonoBehaviour
         if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
         {
             inventory.Container.Clear();
+            
         }
     }
 
