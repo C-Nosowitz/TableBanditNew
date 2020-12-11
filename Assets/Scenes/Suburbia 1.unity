@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.29684302, g: 0.6337671, b: 0.9937157, a: 1}
+  m_IndirectSpecularColor: {r: 0.29684296, g: 0.6337676, b: 0.9937157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4394,7 +4394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07618a64e690d5a4b9b812dc1f5c9f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemObj: {fileID: 0}
+  itemObj: {fileID: 1931673013}
   inventory: {fileID: 11400000, guid: 958761cec6be85641963b4fc8959dc68, type: 2}
   xStart: 0
   yStart: 0
@@ -10929,7 +10929,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 628003067}
-  m_LocalRotation: {x: -0.0060327365, y: 0.07604987, z: 0.0004601298, w: 0.9970857}
+  m_LocalRotation: {x: -0.0060222293, y: 0.09614259, z: 0.00058169814, w: 0.9953492}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -12483,7 +12483,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2017634132}
-  icon: {fileID: 1514940115}
   offset: 125
 --- !u!20 &719212696
 Camera:
@@ -16242,7 +16241,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932049401}
-  m_LocalRotation: {x: 0.012056847, y: 0.076045714, z: -0.0009196017, w: 0.99703103}
+  m_LocalRotation: {x: 0.012035845, y: 0.09613734, z: -0.0011625644, w: 0.9952947}
   m_LocalPosition: {x: -78.3, y: 4.94, z: 54.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -19657,7 +19656,6 @@ MonoBehaviour:
   distraction: {fileID: 0}
   distractSpot: {x: -27.322, y: -1.6592, z: -17.8}
   itemCounter: {fileID: 1760002988}
-  checkpoint: {fileID: 38071181}
   peopleTalkingAudio: {fileID: 0}
   dialogue:
     characterNames:
@@ -19694,7 +19692,6 @@ MonoBehaviour:
     - Sound fair?
     - I reckon so.  You've got yourself a deal!
   seen: 0
-  dManager: {fileID: 473711894}
 --- !u!1 &1182975392
 GameObject:
   m_ObjectHideFlags: 0
@@ -20409,7 +20406,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226458611}
-  m_LocalRotation: {x: 0.012056847, y: 0.07604571, z: -0.0009196016, w: 0.99703103}
+  m_LocalRotation: {x: 0.012035848, y: 0.096137345, z: -0.0011625645, w: 0.9952947}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -32403,7 +32400,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072083278}
-  m_LocalRotation: {x: 0.030190349, y: 0.07601639, z: -0.0023026827, w: 0.99664676}
+  m_LocalRotation: {x: 0.03013773, y: 0.09610028, z: -0.0029110583, w: 0.9949111}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -13,6 +13,13 @@ public class MainMenuControl : MonoBehaviour
     public Text musicValueText;
     public AudioSource bgMusic;
 
+    public GameObject credits;
+
+    private void Start()
+    {
+        credits.SetActive(false);
+    }
+
     private void Update()
     {
         bgMusic.volume = PlayerPrefs.GetFloat("musicVolume", 0.5f);
@@ -41,6 +48,16 @@ public class MainMenuControl : MonoBehaviour
     public void ExitOptions()
     {
         optionsPanel.SetActive(false);
+    }
+
+    public void ShowCredits()
+    {
+        credits.SetActive(true);
+    }
+
+    public void HideCredits()
+    {
+        credits.SetActive(false);
     }
 
     public void Quit()
