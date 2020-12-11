@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.29684302, g: 0.6337671, b: 0.9937157, a: 1}
+  m_IndirectSpecularColor: {r: 0.29684296, g: 0.6337676, b: 0.9937157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2565,7 +2565,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87637438}
-  m_LocalRotation: {x: 0.03044876, y: 0.0760158, z: -0.0023223928, w: 0.9966389}
+  m_LocalRotation: {x: 0.030394757, y: 0.096439004, z: -0.0029463538, w: 0.99487036}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3337,8 +3337,8 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
     - {fileID: 21300000, guid: 4be1d79e31006ca44aa7984ab3ead243, type: 3}
     lines:
-    - Think it's time to head out while we have this chance?
-    - You said it! I gotta be home before I'm missed.
+    - Think it's time to head out while we've got the chance?
+    - You're right!  I should probably get home before my humans notice I'm gone.
   seen: 0
 --- !u!1 &126488446
 GameObject:
@@ -7345,7 +7345,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318486568}
-  m_LocalRotation: {x: 0.012315376, y: 0.07604547, z: -0.00093932013, w: 0.9970279}
+  m_LocalRotation: {x: 0.012293519, y: 0.09647663, z: -0.0011916875, w: 0.9952586}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -11457,8 +11457,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 0
   serializedVersion: 2
-  m_Size: {x: 1.2105654, y: 0.57376397, z: 1.2127801}
-  m_Center: {x: -0.13923843, y: 0.28688198, z: -0.18454319}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: -0.13923843, y: 0.28688198, z: -0.4}
 --- !u!114 &581284072
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11487,7 +11487,7 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: c8312c386ca05254c926e81f6f985326, type: 3}
     lines:
-    - You got all the strawberries! Yuri is happy!
+    - You got all the strawberries!  Yuri will help you now!
   seen: 0
   dManager: {fileID: 1506873834}
 --- !u!114 &581284073
@@ -20870,7 +20870,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010761514}
-  m_LocalRotation: {x: 0.012315374, y: 0.076045476, z: -0.0009393202, w: 0.9970279}
+  m_LocalRotation: {x: 0.012293518, y: 0.09647664, z: -0.0011916877, w: 0.9952586}
   m_LocalPosition: {x: -4.51, y: 2.9054108, z: -71.13386}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -26704,14 +26704,17 @@ MonoBehaviour:
   dialogue:
     characterNames:
     - Skwawks
+    - Bandit
     - Skwawks
     sprites:
     - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
+    - {fileID: 21300000, guid: c8d5d2a1864a5b5479a4f901912a329b, type: 3}
     - {fileID: 21300000, guid: ccbbf8e2d7ab8734fb95efee1b39ed0d, type: 3}
     lines:
     - Doesn't look like you can go that way... at least not without a distraction.
-    - I don't think I can distract all of them. Let's see if there's a bigger animal
-      around to help us.
+    - Hey, isn't that your job?
+    - I don't think I can distract all of them.  But a bigger animal could probably
+      do it.
   seen: 0
 --- !u!1 &1351467025
 GameObject:
@@ -27126,7 +27129,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365124503}
-  m_LocalRotation: {x: -0.005774195, y: 0.07604999, z: 0.00044041022, w: 0.99708724}
+  m_LocalRotation: {x: -0.005763946, y: 0.096482374, z: 0.0005587353, w: 0.9953179}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -33750,7 +33753,7 @@ MonoBehaviour:
     sprites:
     - {fileID: 21300000, guid: 1fbb9635aa64d3f4290088bbe359b3ec, type: 3}
     - {fileID: 21300000, guid: de990b0ad9cc34b42806b02647209c87, type: 3}
-    - {fileID: 21300000, guid: 6436b6e9d8bd4fc439e349cc6b57d611, type: 3}
+    - {fileID: 21300000, guid: 18c0155f9557584498b20a13c7a469ab, type: 3}
     - {fileID: 21300000, guid: de990b0ad9cc34b42806b02647209c87, type: 3}
     - {fileID: 21300000, guid: 2d0393f08d670c54a9cef5c491500520, type: 3}
     - {fileID: 21300000, guid: 2d0393f08d670c54a9cef5c491500520, type: 3}
@@ -33771,7 +33774,7 @@ MonoBehaviour:
     - Behind us... I thought I saw something.  Following us.
     - Ya got some kinda enemies or somethin'?
     - Just one.  A cat, named Shadow.
-    - Ha!  Who's afraid of cats now?
+    - Ha!  I thought cats were supposed to be afraid of dogs, not the other way around.
     - Shut up.
   seen: 0
 --- !u!4 &1754666950

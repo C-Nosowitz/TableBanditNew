@@ -44,11 +44,11 @@ public class LookAhead : MonoBehaviour
                 displayTimer--;
                 if (Input.GetKeyDown("t"))
                 {
-                     textBox.SetActive(true);
-                     displayTimer = 0;
-                    if (hitInfo.collider.name != "Yuri")
+                    textBox.SetActive(true);
+                    displayTimer = 0;
+                    if (hitInfo.collider.name != "Yuri" && hitInfo.collider.name != "Skwawks" && hitInfo.collider.name != "Hint")
                         levelEnd = true;
-                    else
+                    else if (hitInfo.collider.name == "Yuri" || hitInfo.collider.name == "Skwawks")
                     {
                         hitInfo.collider.gameObject.GetComponent<NPCQuest>().ShowNumberNeeded();
                     }

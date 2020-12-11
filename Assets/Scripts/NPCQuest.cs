@@ -15,12 +15,13 @@ public class NPCQuest : MonoBehaviour
     public Vector3 distractSpot;
     public Text itemCounter;
     private bool firstTime = true;
-
+    public GameObject checkpoint;
     public AudioSource peopleTalkingAudio;
 
     public Dialogue dialogue;
     public bool seen = false;
 
+    public DialogueManager dManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,15 +31,33 @@ public class NPCQuest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!checkpoint.activeSelf)
+        {
+            ShowNumberNeeded();
+            Debug.Log(dManager.lineNumber);
+            if (dManager.lineNumber == 0)
+                GetComponent<BoxCollider>().enabled = true;
+        }
+
         if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
         {
-            if (Vector3.Distance(distraction.transform.position, distractSpot) <= 2f)
+            if (gameObject.name == "Yuri")
             {
-                //Debug.Log("ready");
-                clearBerries();
-                distraction.gameObject.GetComponent<DistractionBehavior>().distractionRadius = 500f;
                 peopleTalkingAudio.gameObject.SetActive(false);
+                if (Vector3.Distance(distraction.transform.position, distractSpot) <= 2f)
+                {
+                    //Debug.Log("ready");
+                    clearBerries();
+                    distraction.gameObject.GetComponent<DistractionBehavior>().distractionRadius = 500f;
+                    
+                }
             }
+
+            if (gameObject.name == "Skwawks")
+            {
+                clearBerries();
+            }
+            
         }
     }
 
@@ -60,11 +79,14 @@ public class NPCQuest : MonoBehaviour
                 FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
                 if (player.GetComponent<BanditsMovement>().GetInventoryCount() == requiredItemAmount)
                 {
+                    GetComponent<DialogueTrigger>().dialogue = dialogue;
+                    GetComponent<DialogueTrigger>().TriggerDialogue();
                     gate.SetActive(false);
 
                     gateIcon.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1);
                     //distraction.gameObject.SetActive(true);
-                    distraction.SetDestination(distractSpot);
+                    if (gameObject.name == "Yuri")
+                        distraction.SetDestination(distractSpot);
                 }
             }
             

@@ -29,7 +29,7 @@ public class SkwaksControl : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 skwaks.SetActive(true);
-                skwaks.transform.position = player.position + (player.forward * 2);
+                skwaks.transform.position = player.position + (player.forward * 8);
                 NavMeshAgent agent = skwaks.GetComponent<NavMeshAgent>();
                 Vector3 target = player.position + (transform.forward * flightDistance);
                 agent.SetDestination(target);
